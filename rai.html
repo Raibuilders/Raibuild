@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAI BUILDERS PTE. LIMITED</title>
+    <style>
+        /* Set the main background image */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('7.jpg'); /* Your single background image */
+            background-size: cover; /* Make the background cover the entire viewport */
+            background-position: center center; /* Center the background image */
+            color: #333;
+            padding-bottom: 50px; /* To ensure footer is visible */
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #1A3C6E; /* Dark Blue */
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            background-color: #87CEEB; /* Solid Sky Blue */
+            padding: 20px;
+            border-bottom: 2px solid #1A3C6E; /* Dark Blue Border */
+        }
+        .header h1 {
+            font-size: 46px;
+            margin: 0;
+            color: #3F37C9; /* Company name in purple (#3F37C9) */
+        }
+        .header img {
+            max-width: 150px; /* Logo size */
+        }
+
+        .slogan {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #ef233c; /* Green for the slogan */
+        }
+
+        /* Certification Logos under the Header */
+        .certifications {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .certifications img {
+            width: 80px; /* Small size for certification logos */
+            margin: 0 15px;
+        }
+
+        /* Services Section */
+        .services {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to right, rgba(135, 206, 235, 0.8), rgba(50, 205, 50, 0.6)); /* Transparent Sky Blue and Green */
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            color: #1A3C6E; /* Dark Blue Text */
+        }
+        .services h2 {
+            font-size: 38px;
+            color: #1A3C6E; /* Dark Blue */
+            margin-bottom: 20px;
+        }
+
+        .services ul {
+            list-style-type: disc;
+            padding-left: 40px; /* Add padding to align bullets correctly */
+            font-size: 18px;
+            text-align: left; /* Align bullets to the left */
+            max-width: 600px; /* Limit width for better alignment */
+            margin-left: auto;
+            margin-right: auto; /* Center the list */
+        }
+
+        .services li {
+            margin-bottom: 10px;
+        }
+
+        /* Marquee for service images */
+        .services-marquee {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            margin-top: 40px;
+        }
+        .services-marquee img {
+            width: 200px;
+            margin-right: 20px;
+            border: 2px solid #1A3C6E; /* Dark Blue border for images */
+        }
+
+        /* CSS Animation for scrolling images */
+        .scrolling-images {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* About Us Section */
+        .about-us {
+            background: linear-gradient(to right, rgba(50, 205, 50, 0.6), rgba(135, 206, 235, 0.8)); /* Transparent Green and Sky Blue */
+            padding: 40px;
+            margin-top: 40px;
+            text-align: center;
+            border-top: 2px solid #1A3C6E; /* Dark Blue Border */
+            color: #1A3C6E; /* Dark Blue Text */
+        }
+        .about-us h2 {
+            font-size: 28px;
+        }
+        .about-us p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .certificates {
+            text-align: left;
+            margin-top: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .certificates ul {
+            list-style-type: decimal;
+            padding-left: 40px;
+            font-size: 18px;
+        }
+        .certificates li {
+            margin-bottom: 10px;
+        }
+        .certificates img {
+            width: 150px;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+
+        /* Contact Us Section */
+        .contact-info {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, rgba(135, 206, 235, 0.8), rgba(50, 205, 50, 0.6)); /* Transparent Sky Blue and Green */
+            border-top: 2px solid #1A3C6E; /* Dark Blue Border */
+            color: #1A3C6E; /* Dark Blue Text */
+        }
+        .contact-info h2 {
+            font-size: 28px;
+        }
+        .contact-info p {
+            font-size: 18px;
+        }
+        .contact-info a {
+            color: #1A3C6E; /* Dark Blue */
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            background-color: #1A3C6E; /* Dark Blue */
+            color: white;
+            padding: 10px;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="home" class="header">
+        <img src="logo.jpg" alt="Logo">
+        <h1>RAI BUILDERS PTE. LIMITED</h1>
+        <p class="slogan">Your Trusted Scaffold Contractor</p>
+    </div>
+
+    <!-- Certification Logos -->
+    <div class="certifications">
+        <img src="bca.jpg" alt="BCA Logo">
+        <img src="biz.jpg" alt="Biz Safe Logo">
+        <img src="iso.jpg" alt="ISO 9001:2015 Logo">
+        <img src="iso2.jpg" alt="ISO 45001:2018 Logo">
+    </div>
+
+    <!-- Navbar Section -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about-us">About Us</a>
+        <a href="#contact-us">Contact Us</a>
+    </nav>
+
+    <!-- Services Section -->
+    <div id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>MOM Approved Scaffold Contractor</li>
+            <li>Scaffold Installation</li>
+            <li>Project Management</li>
+            <li>General Construction</li>
+        </ul>
+
+        <!-- Marquee Section for Services Images -->
+        <div class="services-marquee">
+            <div class="scrolling-images">
+                <img src="1.jpg" alt="Service 1">
+                <img src="2.jpg" alt="Service 2">
+                <img src="3.jpg" alt="Service 3">
+                <img src="4.jpg" alt="Service 4">
+                <img src="5.jpg" alt="Service 5">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <p>Our Company, RAI BUILDERS PTE. LIMITED, is a Construction Company incorporated on 28th January 2015. Though new, our Company has quickly spread its wings and is moving towards its goal.</p>
+        <p>In the short period of time, we have had the opportunity to prove our quality services and expertise to our Contractors. Our dedication and team effort have brought us to this level.</p>
+        <p>We are a BCA Registered Company and have attained Biz Safe Star. We are also a MOM Approved Scaffold Contractor and are certified ISO 9001:2015 and ISO 45001:2018 Registered Company.</p>
+        <p>Our Company currently has projects with leading Main Contractors like SHIMIZU, HYUNDAI, DRAGAGES SINGAPORE, WOH HUP (PRIVATE) LIMITED, TIONG SENG CONTRACTORS, KAJIMA, SAMSUNG, and others.</p>
+        <p>We have undertaken many challenging projects and supervise the quality of work closely. RAI BUILDERS PTE. LIMITED believes in maintaining long-term relationships with our partners and fellow workers.</p>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact-us" class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Address: 588 Serangoon Road, Singapore 218202</p>
+        <p>Phone: <a href="tel:+6562970842">+65 6297 0842</a></p>
+        <p>Email: <a href="mailto:raibuilders6999@gmail.com">raibuilders6999@gmail.com</a></p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdIMb3Y_QkQ0wcgF7UCLyX9XfMtq1DYLKvY-2yx6Da9HinbvQ/viewform?usp=sf_link" target="_blank">Fill out our enquiry form</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 RAI BUILDERS PTE. LIMITED. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
